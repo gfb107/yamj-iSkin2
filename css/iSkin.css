@@ -1,0 +1,361 @@
+.x-fullscreen {
+	background-color: black;
+}
+
+.wall .x-inner{
+	line-height: 0;
+	background-color: black;
+}
+
+.watched {
+	width: 54px;
+	height: 55px;
+	background-image: url(../img/watched.png);
+}
+
+img.poster, img.fanart {
+	float: left;
+}
+
+.info {
+	color: goldenrod;
+	background-color: rgba(53, 79, 110, 0.5);
+	font-size: 16px;
+	/* font-weight: bold; */
+}
+
+.info div
+ {
+	padding: 0 8px;
+	white-space: nowrap;
+}
+
+h3 {
+	clear: both
+}
+
+@media screen and (max-width: 800px) {
+	.detailPanel .details {
+		font-size: 16px;
+	}
+	
+	img.poster {
+		width: 27.27%;
+	}
+
+	img.fanart {
+		width: 72.63%;
+	}
+	
+	.info {
+		clear: left;
+	}
+	
+	.info div {
+		width: 25%;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.info div:nth-child(4n+1) {
+		text-align: left
+	}
+
+	.info div:nth-child(4n+4) {
+		text-align: right;
+	}
+	
+	.info div.play {
+		width: 50%;
+	}
+	
+/*
+	.info .resolution,
+	.info .audioCodec {
+		width: 50%;
+	}
+	.info .audioCodec {
+		text-align: right;
+	}
+*/	
+}
+
+@media screen and (min-width: 801px) {
+	.detailPanel .details {
+		font-size: 16px;
+	}
+	
+	img.poster {
+		width: 20.45%;
+	}
+
+	img.fanart {
+		width: 54.47%;
+	}
+	
+	.info {
+		float: left;
+		width: 25.08%;
+		background-color: black;
+	}
+	
+	.info div {
+		display: block;
+		text-align: right;
+		padding: 3px 20px;
+	}
+	
+	.info div::before {
+		color: #606060;
+		font-size: 0.9em;
+		vertical-align: 7%;
+		padding-right: 15px;
+	}
+	
+	.rating::before {
+		content: "Rating: ";
+	}
+	
+	.cert::before {
+		content: "Certification: ";
+	}
+	
+	.runtime::before {
+		content: "Runtime: ";
+	}
+	
+	.year::before {
+		content: "Year: ";
+	}
+	
+	.container::before {
+		content: "Container: ";
+	}
+	
+	.videoCodec::before {
+		content: "Video: ";
+	}
+	
+	.resolution::before {
+		content: "Resolution: ";
+	}
+	
+	.audioCodec::before {
+		content: "Audio: ";
+	}
+}
+
+.x-button.x-button-plain .x-button-icon {
+	width: 25px !important;
+	background-color: transparent !important;
+}
+
+.x-carousel-body {
+	background-color: black;
+}
+
+.detailPanel {
+	background-repeat: no-repeat;
+	background-color: black;
+	background-size: 72.73%;
+	background-position: top right;
+}
+
+.detailPanel .x-scroller-parent {
+	background-repeat: no-repeat;
+	background-position: top left;	
+	background-size: 27.27%;
+}
+
+.detailPanel .x-html {
+	padding: 0;
+}
+
+.detailPanel .details {
+	color: white;
+}
+
+.detailPanel div.plot {
+	padding: 2px 8px;
+	clear: left;
+}
+
+.detailPanel .details a {
+	text-decoration: none;
+	color: skyblue;
+}
+
+.x-html .detailPanel a {
+	text-decoration: none;
+}
+
+.detailPanel div.play {
+	background-color: rgba(0,0,127,0.5);
+}
+
+.detailPanel a.play {
+	background-image: url(../img/play_small.png);
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	padding: 4px 10px 4px 32px; 
+}
+
+.detailPanel .info a.play {
+	padding: 4px 4px 4px 26px;
+	background-position: left center;
+}
+
+.detailPanel a.watch {
+	background-image: url(../img/watch.png);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	padding: 4px 10px 4px 52px;
+}
+
+.detailPanel .list {
+	padding-left: 8px;
+}
+
+.detailPanel tr {
+	border-bottom: 1px solid #404040;
+}
+
+.detailPanel tr:last-child {
+	border-bottom: none;
+}
+
+.detailPanel td.title {
+	padding: 0;
+}
+
+.detailPanel td.parts {
+	width: 10px;
+	vertical-align: top;
+}
+
+.detailPanel td.plot {
+	font-size: 14px;}
+
+.detailPanel .details h3 {
+	color: white;
+	background-color: rgba(53,79,110,0.5);
+	padding: 6px;
+	font-size: 18px;
+	border-top: 1px solid black;
+	margin-bottom: 0;
+}
+
+.detailPanel .x-html table {
+	margin-bottom: 0;
+}
+
+.detail-list {
+	font-size: 14px;
+	border-right: thin solid #354F6E;
+	/* margin: 12px; */
+}
+
+.detail-list .x-toolbar {
+	height: 2em;
+}
+
+.detail-list .x-toolbar-title {
+	line-height: 1.75em;
+}
+
+.detail-list  .x-list .x-list-item {
+	min-height: 2em;
+}
+
+.x-panel.x-floating.remotePanel .x-inner {
+	padding: 0;
+}
+
+/**********************************/
+
+#remote #buttons {
+	padding: 12px 0 0 12px;
+	background: #333;
+	/* -webkit-box-shadow: 0 0 20px #333; */
+	overflow: hidden;
+}
+
+#remote #buttons a {
+	display: block;
+	float: left;
+	
+	border-width: 0 6px 0 6px;
+	-webkit-border-image: url(../img/remote/button-light.png) 0 6 0 6;
+
+	width: 45px;
+	height: 36px;
+	
+	margin: 0 12px 12px 0;
+	
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+#remote #buttons .group {
+	width: 228px;
+	float: left;
+}
+
+#remote #buttons .large a {
+	width: 64px;
+}
+#remote #buttons a.blue {
+	-webkit-border-image: url(../img/remote/button-blue.png) 0 6 0 6;
+} 
+#remote #buttons a.red {
+	-webkit-border-image: url(../img/remote/button-red.png) 0 6 0 6;
+} 
+#remote #buttons a.green {
+	-webkit-border-image: url(../img/remote/button-green.png) 0 6 0 6;
+} 
+#remote #buttons a.yellow {
+	-webkit-border-image: url(../img/remote/button-yellow.png) 0 6 0 6;
+} 
+#remote #buttons a.dark {
+	-webkit-border-image: url(../img/remote/button-dark.png) 0 6 0 6;
+} 
+#remote #buttons a.focus {
+	-webkit-border-image: url(../img/remote/focus-light.png) 0 6 0 6;
+}
+#remote #buttons a.focus.blue {
+	-webkit-border-image: url(../img/remote/focus-blue.png) 0 6 0 6;
+} 
+#remote #buttons a.focus.red {
+	-webkit-border-image: url(../img/remote/focus-red.png) 0 6 0 6;
+} 
+#remote #buttons a.focus.green {
+	-webkit-border-image: url(../img/remote/focus-green.png) 0 6 0 6;
+} 
+#remote #buttons a.focus.yellow {
+	-webkit-border-image: url(../img/remote/focus-yellow.png) 0 6 0 6;
+} 
+#remote #buttons a.focus.dark {
+	-webkit-border-image: url(../img/remote/focus-dark.png) 0 6 0 6;
+} 
+#remote #buttons a em {
+	font-style: normal;
+	width: 34px;
+	height: 36px;
+	display: inline-block;
+	margin: -2px 0 0;
+	background-image: url(../img/remote/icons.png);
+	background-position: top left;
+	background-repeat: no-repeat;	
+	color: gold;
+}
+
+#remote #buttons .large a em {
+	width: 40px;
+|
+
+#remote #buttons a.focus em {
+	opacity: 0.5;
+}

@@ -1,0 +1,11 @@
+<project default="deploy">
+	<property name="deploy.dir" value="C:/htdocs/SenchaNMT" />
+	<property name="src.dir" value="./html"/>
+
+	<target name="deploy">
+		<copy file="${src.dir}/iSkin.js" todir="${deploy.dir}" />
+		<copy file="${src.dir}/index.html" todir="${deploy.dir}" />
+		<copy file="${src.dir}/css/iSkin.css" todir="${deploy.dir}/css" />
+		<copy file="${src.dir}/js/nmt.js" todir="${deploy.dir}/js" />
+	</target>
+</project>

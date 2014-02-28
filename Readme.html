@@ -1,0 +1,262 @@
+<html>
+<head>
+<title>iSkin2: The YAMJ skin for iPhone, iPad, and iPod Touch</title>
+<style type="text/css">
+body { font-family: sans-serif; }
+b { white-space: nowrap; }
+a { text-decoration: none; }
+div.screenshot { float: left; text-align: center; margin: 0 4px; }
+div.screenshot img { 
+    width: 160px; 
+    height: 240px; 
+    border: thin solid black; 
+}
+
+div.screenshot img.wide {
+    width: 240px;
+    height: 160px;
+}
+
+.right { 
+    float: right;
+}
+.code { 
+    font-family: monospace; 
+    white-space: nowrap; font-size: 10pt; 
+    font-weight: bold; 
+    padding: 4px; 
+    border: thin solid black; 
+    background-color: lightgrey; 
+}
+.done {
+    text-decoration: line-through;
+}
+figure {
+	display: inline-block;
+	margin: 10px;
+}
+figcaption { text-align: center; }
+</style>
+</head>
+<body>
+<h2>iSkin2: The YAMJ skin for Tablets, Laptops, and Desktops</h2>
+<hr/>
+<p>iSkin2 brings <a href="http://code.google.com/p/moviejukebox/">YAMJ</a> to any Tablet, Laptop, or Desktop computer with a web-kit based browser.  This includes iPads, Android Tablets, or any Laptop or Desktop with Chrome or Safari.</p>
+<p>Browse or search your video collection on your device, then once you've decided what you want to watch, start watching it with one final touch, and then control playback using the integrated remote.</p>
+<h4>Changes in Preview 8</h4>
+<ul>
+	<li>Add watch support for episodes and parts</li>
+	<li>Fix watched support for episodes and parts</li>
+	<li>Added link to IMDB, theMoviedDB, or the theTvDb from details page</li>
+	<li>Fix runtime, now supports the following formats in the video's .xml file:
+		<table border="1" cellspacing="0" cellpadding="4">
+			<tr><th>Value</th><th>Displayed</th></tr>
+			<tr><td>93</td><td>1:33</td></tr>
+			<tr><td>1h 27m</td><td>1:27</td></tr>
+			<tr><td>2h</td><td>2:00</td></tr>
+			<tr><td>95 min</td><td>1:35</td></tr>
+	</table></li>
+	<li>Show director(s) in details page (as link if <a href="https://code.google.com/p/moviejukebox/wiki/PropertiesConfiguration#mjb.categories.indexList">mjb.categories.indexList</a> and <a href="https://code.google.com/p/moviejukebox/wiki/PropertiesConfiguration#mjb.categories.displayList">mjb.categories.displayList</a> include Director)</li>
+	<li>First attempt at certification artwork when imdb.preferredCountry is Germany, UK, or France.</li>
+	<li>Show library in details page, when there is a description for the library in your library XML file</li>
+</ul>
+<h4>Changes in Preview 7</h4>
+<ul>
+	<li>Fixed watched support for movies</li>
+	<li>Replaced icons for Play and Watch buttons</li>
+	<li>Added artwork for certification and media info, based on the purity flags from XBMC.</li>
+</ul>
+<h4>Changes in Preview 6b</h4>
+<ul>
+	<li>Remove mjb.skipIndexGeneration=true, which broke iSkin2</li>
+	<li>Allow quotes in cast member names</li>
+	<li>Allow for video collections that don't contain any sets</li>
+</ul>
+<h4>Changes in Preview 6a</h4>
+<ul>
+	<li>New: implemented support for skin-urlMap in skin-options.xsl</li>
+	<li>New: implemented user control of "initial" thumb width<ul>
+		<li>After changing the thumb width in settings, change orientation to see the results</li>
+		<li>The selected thumb width is not the exact size the thumbs will be.  iSkin2 will try to find the best fit using the selected width as a starting point.</li>
+		<li>The default initial thumb width is 148; it can be changed to any value from 100 to 200.
+	</ul></li>
+	<li>Fix: multi-word links in details pages</li>
+	<li>Fix: repeated use of Categories on phones</li>
+	<li>Fix: double-tap in details page returns to parent index only on poster or fanart</li>
+</ul>
+<h4>Changes in Preview 6</h4>
+<ul>
+    <li>Updated to Sencha Touch 2.1.0 GPL</li>
+	<li>New Home Screen icons</li>
+    <li>Removed Star/Favorite, added "Home" field in settings.  Navigate to the desired index, then go to settings and set Home.</li>
+	<li>Default Home index is "Other : All"</li>
+	<li>Assorted bug fixes</li>
+	<li>Categories &gt; Set converted to an index</li>
+	<li>Orientation change handling</li>
+	<li>Basic "watched" support</li>
+	<li>Watch (on tablet, phone, etc):<ul>
+		<li>Renamed "Direct URL" to "Embed"</li>
+		<li>Added new "Direct URL", to launch default media player</li>
+	</ul></li>
+	<li>Improvements to wall layout finds better thumbnail size to fit screen size.
+	<li>Now phone friendly, on phone-sized screens only:<ul>
+		<li>Use a single action "..." button to show the action buttons on demand, rather than filling the title-bar</li>
+		<li>Back button contains no text, leaving more space for title</li>
+		<li>Remote, Settings, and Categories are full-screen</li>
+	</ul></li>
+	<li>Search is no longer on the Categories menu bar</li>
+	<li>Changes to remote layout</li>
+	<li>Screen shots replaced with actual sceen shots from Nexus 7 and iPhone 4S</li>
+	<li>Updated Readme.html</li>
+</ul>
+<h4>Known Issues</h4>
+<ul>
+<li>None, but I'm sure there are issues.</li>
+</ul>
+</p>
+<p>I developed iSkin2 to fit my personal needs and preferences, with limited time available.  There are probably lots of things that potential users would like to change or
+add. That's fine. I'm open to suggestions but can't promise I'll incorporate any.  Remember, if you are able to use iSkin2 as I provide it, you have everything you need
+to create your own version.  Feel free to do so.</p>
+<p>The latest version of iSkin2 is always available at <a href="http://mediaplayersite.com/iSkin">Omertron's NMT and PCH Site</a>.
+
+<p>All discussion of iSkin2 should take place in the <a href="http://www.networkedmediatank.com/showthread.php?tid=25613&pid=219703#pid219703">iSkin and iSkin2 thread at networkedmediatank forums</a>.  It's the best place to ask questions, request help, or make suggestions.</p>
+
+<h3>Information</h3>
+<p>iSkin2 is an HTML skin for YAMJ. It is unique among YAMJ skins in that it is not viewed directly on the NMT. It is viewed on an internet connected device, such as an iPad, Android tablet, a laptop or desktop computer.</p>
+<p>In order for this to work, the generated HTML files must be accessible by an HTTP URL from an HTTP server on your home network.  An NMT with an internal HDD can be used as the HTTP Server (install the NMT Applications and make sure myiHome is running), but WHS (Windows Home Server), and most file servers and NAS (Network Attached Storage) devices include one or have one or more that can be installed.</p>
+<p>If you are currently using a YAMJ skin with your NMT, you can use iSkin2 in conjunction with that skin, but you must run YAMJ twice. Once for the "normal" skin that is viewed on the TV connected to the NMT, and a second time for iSkin2.</p>
+<h3>Requirements:</h3>
+<ol>
+  <li>An internet enabled device with a web-kit based browser (Apple iPad, Android tablet; laptop or desktop computer running Google Chrome or Apple Safari) with access to your home network.</li>
+  <li><a href="http://code.google.com/p/moviejukebox/">YAMJ</a>.  Through out the rest of this document, I'll assume it's installed in C:\YAMJ.  If you've installed it somewhere else, you'll have to substitute the actual installation directory where ever you see C:\YAMJ</li>
+  <li>A Network Media Tank (NMT)
+	<ul>
+		<li id="series1">If you have a Series 1 NMT, it <b>must</b> have:
+			<ul>
+				<li>An internal HDD (hard disk drive) or other storage on which the NMT Applications can be installed,</li>
+				<li>NMT Applications installed with FTP Server running, as required by the NMT Community Software Installer,</li>
+				<li><a href="http://plonk.googlecode.com/files/PLoNK-a100-csi.0.0.3.zip">PLoNK-a100-csi.0.0.3.zip</a> or newer.<p>Use NMT Community Software Installer to install the appropriate package on each of your NMTs. From the File menu, select "Install from file..." and follow the instructions.</p>			</li>
+			</ul>
+		</li>
+	</ul>
+	<li>An HTTP Server to make the HTML files available for browsing.  You have a number of options here:
+    <ul>
+	  <li>If you have an internal HDD in your NMT, you can use the myiHome NMT Application.  The document root for the HTTP Server 
+	  is the root of the internal HDD, and the base URL to the document root will be 
+	  http://<i>ip.address.of.nmt</i>:8088/stream/file=/share/
+	  <li>If you have a Windows Home Server (WHS), you can use Internet Information Server (IIS).  The document root for IIS is C:\Inetpub\wwwroot, 
+	  and the URL to the document root is http://<i>ip.address.of.whs</i>/
+	  <li>Most NASes include an HTTP server that you can use.  If not, <b>apache</b>, <b>lighttpd</b> or <b>llink</b> are often 
+	  available.  You'll need to figure out what the document root is, as well as the URL to the document root.
+	</ul>
+  <li>File system access to the document root folder of your HTTP Server, often achieved with an SMB (or NFS) mount.  In the rest of 
+  this document,  I'll refer to this folder as H:. <ul>
+	<li>If you are using your NMT's internal drive, mount it as H:
+	<li>If you are using a WHS, you can run YAMJ on the WHS, and the document root folder will be C:\Inetpub\wwwroot\, so use that
+ 	instead of H:
+	<li>If you are using another file server or NAS, you'll have to figure out what the document root is, and how to access it on 
+	your PC.  Whatever that path is, use that instead of H: in the following instructions. You'll also need to know the url to the 
+	document root.
+  </ul>
+</ol>
+<h3>Instructions:</h3>
+<p>These instructions assume you've already satisfied the above requirements and verified that each one is operating 
+correctly.  Please do not proceed any further unless you have done that.
+<ol>
+  <li>Unzip <b>iSkin2-preview6a.zip</b> into the <b>skins</b> directory of your YAMJ installation ( <b>C:\YAMJ\skins</b> ).  
+  This will create the <b>iSkin2</b> directory, next to the other skin directories, such as <b>default</b>, <b>gfb107</b>, 
+  <b>gfb107-sd</b>, and <b>sd</b>.</li>
+  <li>In the newly created <b>iSkin2</b> folder, edit <b>skin-options.xsl</b> and
+  <ol>
+    <li>Set <b>skin-nmtList</b> as follows:
+		<p>Create a comma separated list of entries for each NMT you have.  Each entry consists of:
+		<ul>
+			<li>The name of the NMT, or the room in which the NMT resides</li>
+			<li>A colon</li>
+			<li>The ip address of the NMT</li>
+			<li>A colon</li>
+			<li>The series/generation of your NMT (1, 2, 3, or 4).  For example, an A-<b>1</b>10 is a series <b>1</b>, a C-<b>2</b>00 is a series <b>2</b>, an A-<b>3</b>00 is a series <b>3</b>, an A-<b>4</b>00</li>
+		</ul>
+		<p>Here is an example for one room, with a series 2 NMT:</p>
+		<div class="code">&lt;xsl:variable name="skin-nmtList"&gt;Family Room:192.168.1.24:2&lt;/xsl:variable&gt;</div>
+		<p>Here is an example adding a second room with a Series 1 NMT:</p>
+		<div class="code">&lt;xsl:variable name="skin-nmtList"&gt;Family Room:192.168.1.24:2,Bonus Room:192.168.1.25:1&lt;/xsl:variable&gt;</div>
+		<p><b>Note:</b> Using a single instance of iSkin2 with multiple NMTs requires careful configuration:
+		<ul>
+			<li>Every NMT must be able to access your entire video collection using the same NMT paths.</li>
+			<li>Every Series 1 NMT must meet the requirements explained <a href="#series1">above</a></li>
+		</ul>
+	</li>
+    <li>If you are using a Series 1 NMT, set <b>skin-doneURL</b> to the URL you want displayed on your TV by the NMT when a video stops playing.
+    The default value of <b>file:///share/index.htm</b> works for those with an HDTV and are using a custom index (or one generated 
+	by YAMJ).  Those with SDTVs should use <b>file:///share/index_sd.htm</b>.
+	<p>If your videos are accessed through a network share, your custom index should also be accessed through that network share, and 
+	your <b>skin-doneURL</b> should be the NMT path to the index on that share, something like 
+	<b>file:///opt/sybhttpd/localhost.drives/NETWORK_SHARE/MOVIES/index.htm</b>.  Note how similar this value is to the NMT path 
+	you entered into moviejukebox.properties or library.xml when setting up YAMJ.
+	<p><b>Note:</b> the skin-doneURL is only used with Series 1 NMTs.  Series 2 and 3 NMTs will always return to the screen that was 
+	displayed before the video started playing.
+	</ol>
+   </li>
+   <li>Use command-line option to run YAMJ using iSkin2 skin and to put the generated HTML file in the HTTP Server's document root:
+   <div class="code">MovieJukebox library.xml -D mjb.skin.dir=./skins/iSkin2 -o H:</div>
+   Substitute the path to the document root of your HTTP Server instead of H:, if needed.
+</li>
+<li>Open the browser on your internet connect device at point it at iSkin.html on your HTTP Server.  Here are some examples:
+  <ul>
+    <li>If you are using your NMTs internal HDD and the myiHome NMT Application:
+      <div class="code">http://<i>ip.address.of.nmt</i>:8088/stream/file=/share/iSkin2.html</div>
+    <li>If you are using a WHS or NAS device
+	<div class="code">http://<i>ip.address.of.device</i>/iSkin2.html</div>
+  </ul>
+<li>Put an icon for iSkin2 on your Home Screen. <b>iPad/iPhone users must NOT skip this step, or else scrolling will not work correctly.</b>
+<ol>
+	<li>Touch the "+" in the status bar</li>
+	<li>Touch "Add To Home Screen"</li>
+	<li>Touch "Add"</li>
+	<li>Touch the new icon for iSkin2 on your Home Screen to go directly to iSkin2 in full screen mode</li> 
+</ol>
+
+<h2>Credits</h2>
+<p>iSkin2 wouldn't be possible without the efforts of
+<ul>
+	<li>The YAMJ <a href="http://code.google.com/p/moviejukebox/people/list">developers</a></li>
+	<li>The <a href="http://www.networkedmediatank.com/showthread.php?tid=20073">MediatankController for iPhone</a> developer</li>
+	<li>The <a href="http://code.google.com/p/plonk/people/list">PLoNK</a> developers</li>
+	<li>The <a href="http://www.sencha.com/products/touch/">Sencha Touch</a> developers</li>
+</ul>
+
+<h2>Screen Shots</h2>
+	<h3>Nexus 7, Dolphin browser (supports fullscreen mode)</h3>
+<figure><a href="screenshots/Nexus 7/Landscape-Index.png"><img src="screenshots/Nexus 7/Landscape-Index.png" width="320px"/></a><figcaption>Index (Landscape)</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Lansdcape-Movie.png"><img src="screenshots/Nexus 7/Landscape-Movie.png" width="320px"/></a><figcaption>Movie (Landscape)</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Landscape-Set.png"><img src="screenshots/Nexus 7/Landscape-Set.png" width="320px"/></a><figcaption>Set (Landscape)</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Landscape-TV.png"><img src="screenshots/Nexus 7/Landscape-TV.png" width="320px"/></a><figcaption>TV Season (Landscape)</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Categories.png"><img src="screenshots/Nexus 7/Categories.png" width="320px"/></a><figcaption>Categories</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Search.png"><img src="screenshots/Nexus 7/Search.png" width="320px"/></a><figcaption>Search</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Settings.png"><img src="screenshots/Nexus 7/Settings.png" width="320px"/></a><figcaption>Settings</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Remote.png"><img src="screenshots/Nexus 7/Remote.png" width="320px"/></a><figcaption>Remote</figcaption></figure>
+<br>
+<figure><a href="screenshots/Nexus 7/Portrait-Movie.png"><img src="screenshots/Nexus 7/Portrait-Movie.png" width="200px"/></a><figcaption>Movie (Portrait)</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Portrait-Set.png"><img src="screenshots/Nexus 7/Portrait-Set.png" width="200px"/></a><figcaption>Set (Portrait)</figcaption></figure>
+<figure><a href="screenshots/Nexus 7/Portrait-TV.png"><img src="screenshots/Nexus 7/Portrait-TV.png" width="200px"/></a><figcaption>TV Season (Portrait)</figcaption></figure>
+	<h3>iPhone 4S</h3>
+<figure><a href="screenshots/iPhone 4S/Landscape-Index.png"><img src="screenshots/iPhone 4S/Landscape-Index.png" width="240px"/></a><figcaption>Index (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-Movie.png"><img src="screenshots/iPhone 4S/Landscape-Movie.png" width="240px"/></a><figcaption>Movie (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-Set.png"><img src="screenshots/iPhone 4S/Landscape-Set.png" width="240px"/></a><figcaption>Set (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-TV.png"><img src="screenshots/iPhone 4S/Landscape-TV.png" width="240px"/></a><figcaption>TV Season (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-Search.png"><img src="screenshots/iPhone 4S/Landscape-Search.png" width="240px"/></a><figcaption>Search (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-Categories.png"><img src="screenshots/iPhone 4S/Landscape-Categories.png" width="240px"/></a><figcaption>Categories (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-Remote.png"><img src="screenshots/iPhone 4S/Landscape-Remote.png" width="240px"/></a><figcaption>Remote (Landscape)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Landscape-Settings.png"><img src="screenshots/iPhone 4S/Landscape-Settings.png" width="240px"/></a><figcaption>Settings (Landscape)</figcaption></figure>
+<br>
+<figure><a href="screenshots/iPhone 4S/Portrait-Index.png"><img src="screenshots/iPhone 4S/Portrait-Index.png" width="160px"/></a><figcaption>Index (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-Movie.png"><img src="screenshots/iPhone 4S/Portrait-Movie.png" width="160px"/></a><figcaption>Movie (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-Set.png"><img src="screenshots/iPhone 4S/Portrait-Set.png" width="160px"/></a><figcaption>Set (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-TV.png"><img src="screenshots/iPhone 4S/Portrait-TV.png" width="160px"/></a><figcaption>TV Season (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-Search.png"><img src="screenshots/iPhone 4S/Portrait-Search.png" width="160px"/></a><figcaption>Search (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-Categories.png"><img src="screenshots/iPhone 4S/Portrait-Categories.png" width="160px"/></a><figcaption>Categories (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-Remote.png"><img src="screenshots/iPhone 4S/Portrait-Remote.png" width="160px"/></a><figcaption>Remote (Portrait)</figcaption></figure>
+<figure><a href="screenshots/iPhone 4S/Portrait-Settings.png"><img src="screenshots/iPhone 4S/Portrait-Settings.png" width="160px"/></a><figcaption>Settings (Portrait)</figcaption></figure>
+</body>
+</html>

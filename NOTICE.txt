@@ -1,0 +1,11 @@
+Notice.txt - iSkin2 credits and copyright notices
+
+    iSkin2 is Copyright (c) 2008-2012 by Greg Bush, licensed under 
+		the GNU GPL license v3 (http://www.gnu.org/copyleft/gpl.html)
+    
+THIRD PARTY COMPONENTS
+	iSkin2 includes the following components:
+	
+   Sencha Touch, licensed under GNU GPL license v3 (http://www.gnu.org/copyleft/gpl.html)
+        http://www.sencha.com/products/touch/license/
+
