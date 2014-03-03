@@ -11,7 +11,7 @@
 	 * @cfg {String} applicationId
 	 * This is the name namespace for your application. On IOS, this should match the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationId":"com.mmoviejukebox.iSkin",
+	"applicationId":"com.moviejukebox.iSkin",
 
 	/**
 	 * @cfg {String} bundleSeedId
@@ -24,7 +24,7 @@
 	 * @required
 	 * This is the version of your application.
 	 */
-	"versionString":"0.6a",
+	"versionString":"0.9",
 
 	/**
 	 * @cfg {Integer} versionCode
