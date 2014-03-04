@@ -22,6 +22,6 @@ To build iSkin2:
 To create a distribution .zip file:
 	mkdir iSkin2\html
 	xcopy /s builds\iSkin\package\* iSkin2\html
-	zip -r iSkin2.zip iSkin2
+	zip -r iSkin2-{version}.zip iSkin2
 	
-	
+Where {version} is the version number you are releasing.  This should be consistent with the value of version in iSkin2\version.xml	
