@@ -16,9 +16,12 @@ Download and install Sencha Cmd 3.0.0.250 from:
 Open a command-line window, and switch into the directory containing the cloned git repo, for example
 	cd \Users\<user>\Docments\GitHub\yamj-iSkin2
 
-Run the following command:
+To build iSkin2:
 	sencha app build package
 	
-Create a distribution .zip file:
+To create a distribution .zip file:
+	mkdir iSkin2\html
 	xcopy /s builds\iSkin\package\* iSkin2\html
 	zip -r iSkin2.zip iSkin2
+	
+	
