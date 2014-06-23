@@ -22,8 +22,8 @@
    "address": "<xsl:value-of select="$props[2]" />",
    "series": "<xsl:value-of select="$props[3]" />"
  }</xsl:template>
-<xsl:template name="doMap"><xsl:param name="map"/><xsl:variable name="props" select="tokenize($map,'=')" />
-    "<xsl:value-of select="$props[1]" />": "<xsl:value-of select="$props[2]" />"</xsl:template>
+<xsl:template name="doMap"><xsl:param name="map"/><xsl:analyze-string select="$map" regex="(.+)=([^=].+)"><xsl:matching-substring>
+	"<xsl:value-of select="regex-group(1)" />": "<xsl:value-of select="regex-group(2)" />"</xsl:matching-substring></xsl:analyze-string></xsl:template>
 <xsl:template match="/library">{
   "doneUrl": "<xsl:value-of select="$skin-doneURL"/>",<xsl:if test="$skin-proxy!=''" >,
   "proxy": "<xsl:value-of select="$skin-proxy" />",</xsl:if>
